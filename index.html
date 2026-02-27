@@ -1,0 +1,131 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ali Akcin | Software Developer Portfolio" />
+  <title>Ali Akcin | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css?v=3" />
+  <link rel="stylesheet" href="assets/css/layout.css?v=3" />
+  <link rel="stylesheet" href="assets/css/components.css?v=3" />
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">Ali Akcin</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">Menu</button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#papers">Academic Papers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section reveal">
+      <div class="container hero-grid">
+        <div>
+          <p id="hero-kicker" class="kicker"></p>
+          <h1 id="hero-title"></h1>
+          <p id="hero-summary" class="hero-summary"></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-outline" href="#contact">Get In Touch</a>
+          </div>
+        </div>
+        <aside class="card quick-facts">
+          <h2>Quick Facts</h2>
+          <ul id="quick-facts-list"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="container about-grid">
+        <div class="profile-card">
+          <img src="assets/img/profile.png?v=3" alt="Ali Akcin headshot" />
+        </div>
+        <div>
+          <p class="section-label">Biography</p>
+          <h2>About Me</h2>
+          <div id="bio-content" class="bio-content"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <p class="section-label">Portfolio</p>
+        <h2>Selected Projects</h2>
+        <div id="project-grid" class="project-grid"></div>
+      </div>
+    </section>
+
+    <section id="education" class="section reveal">
+      <div class="container">
+        <p class="section-label">Background</p>
+        <h2>Education</h2>
+        <div id="education-list" class="education-list"></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="container skill-layout">
+        <div>
+          <p class="section-label">Strengths</p>
+          <h2>Technical Skills</h2>
+          <div id="skill-chips" class="chip-wrap"></div>
+        </div>
+        <aside>
+          <p class="section-label">Credentials</p>
+          <h2>Certifications</h2>
+          <ul id="cert-list" class="cert-list"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="papers" class="section reveal">
+      <div class="container">
+        <p class="section-label">Research</p>
+        <h2>Academic Papers</h2>
+        <div id="papers-list" class="papers-list"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="container contact-card">
+        <div>
+          <p class="section-label">Connect</p>
+          <h2>Let's Build Something Useful</h2>
+          <p id="contact-note"></p>
+        </div>
+        <div class="contact-links">
+          <a id="github-link" class="btn btn-primary" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          <a id="linkedin-link" class="btn btn-outline" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>(c) <span id="current-year"></span> Ali Akcin. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/data/portfolio-data.js?v=3"></script>
+  <script defer src="assets/js/ui/section-renderers.js?v=3"></script>
+  <script defer src="assets/js/ui/interactions.js?v=3"></script>
+  <script defer src="assets/js/app/init.js?v=3"></script>
+</body>
+</html>
+
