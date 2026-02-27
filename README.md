@@ -9,8 +9,3 @@
 - `assets/js/ui/interactions.js`: Interaction behavior (mobile nav, reveal animations)
 - `assets/js/app/init.js`: App initialization/controller layer
 - `assets/img/profile.png`: Profile image
-
-## Notes
-
-- Update repository links in `assets/js/data/portfolio-data.js`.
-- Add/update social links in `assets/js/data/portfolio-data.js`.
