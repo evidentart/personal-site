@@ -2,22 +2,55 @@
   hero: {
     kicker: "Software Developer",
     title: "Ali Akcin",
+    focus: "Backend, Cloud & AI Systems",
     summary:
-      "Software developer focused on scalable backend systems, cloud-native architecture, and modern full-stack delivery."
+      "Software developer building backend, cloud, and AI-integrated systems with an emphasis on reliability, maintainability, and clear system design."
   },
   quickFacts: [
-    "B.S. Information Systems graduate (UMBC, 2024)",
-    "Microservices, event-driven architecture, and cloud deployments",
-    "Hands-on with Java, Spring Boot, Python, React, PostgreSQL, AWS",
-    "Strong technical communication across engineering and non-technical teams"
+    "Backend, cloud & AI systems",
+    "Java, C#, Python, TypeScript, JavaScript & SQL",
+    "REST APIs, event-driven systems & data workflows",
+    "B.S. Information Systems · UMBC"
   ],
   biography: [
-    "Hello, my name is Ali Akcin. I am a software developer with a strong foundation in software development, data analytics, and system optimization. I graduated with a B.S. in Information Systems from the University of Maryland, Baltimore County (2024), after completing an A.S. in Computer Science at the Community College of Baltimore County (2022).",
-    "I have hands-on experience in backend development, data preprocessing, and system performance improvements. I work across Java, Python, JavaScript, and SQL to build scalable, user-focused solutions that are reliable in production environments.",
-    "Through software development internship experience, I implemented RESTful APIs, optimized database queries, and collaborated in Agile teams to deliver high-performance applications. Alongside technical execution, my technical communication training at UMBC strengthened my ability to explain complex systems clearly through documentation, user guides, and cross-functional collaboration."
+    "I am a software developer with a B.S. in Information Systems from the University of Maryland, Baltimore County and an A.S. in Computer Science from the Community College of Baltimore County.",
+    "I have hands-on experience in backend development, RESTful APIs, data pipelines, databases, and AI/LLM evaluation. I work across Java, C#, Python, TypeScript, JavaScript, and SQL, with experience using Spring Boot, .NET, React, PostgreSQL, AWS, and Docker.",
+    "Through software engineering experience and independent projects, I have built backend services, automated data workflows, event-driven systems, cloud infrastructure, and AI-integrated applications."
+  ],
+  experience: [
+    {
+      company: "Handshake",
+      role: "AI Trainer",
+      dates: "Dec 2025 – Present",
+      bullets: [
+        "Evaluate and refine LLM responses for accuracy, reasoning, relevance, creativity, and safety.",
+        "Design prompts, annotate AI-generated responses, and curate data for LLM training and evaluation projects."
+      ]
+    },
+    {
+      company: "Venture Shares",
+      role: "Software Engineer Intern",
+      dates: "Nov 2023 – May 2024",
+      bullets: [
+        "Developed RESTful backend APIs and application logic using Python and TypeScript.",
+        "Built and maintained web-scraping and ETL pipelines for collecting, cleaning, validating, and storing financial data in PostgreSQL.",
+        "Worked on debugging, backend reliability, and data quality."
+      ]
+    },
+    {
+      company: "Revature",
+      role: "Software Engineer Trainee",
+      dates: "Jul 2023 – Oct 2023",
+      bullets: [
+        "Developed Java backend applications and REST APIs using OOP, SQL, data structures, and reusable components.",
+        "Built and tested data-driven applications integrating Java services with HTML, CSS, and JavaScript."
+      ]
+    }
   ],
   projects: [
     {
+      number: "01",
+      category: "AI systems · Windows desktop",
       name: "Aegis – AI Systems Investigation Platform",
       tools: "C#, .NET 10, WinUI 3, SQLite, OpenAI .NET SDK, xUnit",
       repository: "https://github.com/evidentart/Aegis",
@@ -27,6 +60,8 @@
       ]
     },
     {
+      number: "02",
+      category: "Event-driven systems · Fintech",
       name: "SmartExpenseAnalyzer",
       tools: "Java, Spring Boot, React, PostgreSQL, MongoDB, Kafka, RabbitMQ, gRPC, Keycloak, Docker",
       repository: "https://github.com/evidentart/event-driven-budget-platform",
@@ -36,6 +71,8 @@
       ]
     },
     {
+      number: "03",
+      category: "Serverless systems · AWS",
       name: "Serverless Image Processing Platform",
       tools: "Python, React, AWS Lambda, S3, SQS, API Gateway, Terraform, GitHub Actions",
       repository: "https://github.com/evidentart/serverless-image-processing",
@@ -43,94 +80,43 @@
         "Built an event-driven serverless image-processing platform with direct browser-to-S3 presigned uploads, SQS-backed asynchronous processing, image validation, and automated thumbnail, medium-size, and WebP generation.",
         "Provisioned AWS infrastructure with Terraform using private S3 storage, least-privilege IAM, retry/DLQ handling, and deterministic UUID-based processing; added GitHub Actions CI covering 45 automated Python tests."
       ]
-    },
-    {
-      name: "Android Studio Projects",
-      tools: "Java, Android Studio, Android SDK, Mobile UI",
-      repository: "https://github.com/evidentart/android-studio-projects",
-      highlights: [
-        "Developed multiple mini Android applications to practice core mobile development patterns, UI flows, and app structuring.",
-        "Implemented project variants such as CoffeeArt, RentalApp2, SplitTheBill, hotelApp, thechefnav, and theticket to strengthen Android fundamentals."
-      ]
-    },
-    {
-      name: "Hotel Booking Analysis Project",
-      tools: "PostgreSQL, WEKA, Python, Tableau, Machine Learning",
-      repository: "https://github.com/evidentart/hotel_booking_analysis",
-      highlights: [
-        "Processed over 119,000 hotel booking records with PostgreSQL and WEKA for cleaning, preprocessing, feature selection, and transformation.",
-        "Applied K-Means clustering, J48 decision trees, and linear regression to analyze cancellations, demand trends, customer segments, and pricing strategy."
-      ]
-    },
-    {
-      name: "Data Science & Analytics Projects Portfolio",
-      tools: "Python, SQL, Excel, Pandas, Analytics",
-      repository: "https://github.com/evidentart/data-science-projects",
-      highlights: [
-        "Built a structured portfolio of analytics projects across Python, SQL, and Excel, with each project organized in dedicated folders and documented READMEs.",
-        "Demonstrated end-to-end workflows including data cleaning, analysis, reporting, and basic machine learning experimentation for learning and practice."
-      ]
     }
   ],
   education: [
     {
       school: "University of Maryland, Baltimore County",
       degree: "B.S. in Information Systems",
-      years: "2022-2024",
+      years: "2022–2024",
       location: "Baltimore, MD"
     },
     {
       school: "Community College of Baltimore County",
       degree: "A.S. in Computer Science",
-      years: "2019-2022",
+      years: "2019–2022",
       location: "Baltimore, MD"
     }
   ],
   skills: [
-    "Java",
-    "Spring Boot",
-    "Python",
-    "Pandas",
-    "Jupyter Notebooks",
-    "React",
-    "PostgreSQL",
-    "MySQL",
-    "RDBMS",
-    "SQL",
-    "Docker",
-    "Maven",
-    "Git",
-    "Linux",
-    "Troubleshooting",
-    "Hibernate",
-    "JPA",
-    "RESTful APIs",
-    "gRPC",
-    "Kafka",
-    "RabbitMQ",
-    "JWT",
-    "AWS",
-    "Jenkins",
-    "Kubernetes",
-    "TDD",
-    "Microservices",
-    "OpenAPI/Swagger",
-    "CI/CD",
-    "Agile/Scrum",
-    "Keycloak",
-    "Vite",
-    "Material-UI",
-    "AI Integration",
-    "Prompt Engineering",
-    "Data Analytics",
-    "Data Analysis",
-    "Data Visualization",
-    "IBM Cognos Analytics",
-    "Excel",
-    "Predictive Modeling",
-    "Data Management",
-    "AI Strategy",
-    "Machine Learning"
+    {
+      group: "Languages",
+      items: ["Java", "C#", "Python", "TypeScript", "JavaScript", "SQL"]
+    },
+    {
+      group: "Frameworks / Application",
+      items: ["Spring Boot", ".NET 10", "WinUI 3", "React", "REST APIs"]
+    },
+    {
+      group: "Databases / Distributed Systems",
+      items: ["PostgreSQL", "MongoDB", "SQLite", "Kafka", "RabbitMQ", "gRPC"]
+    },
+    {
+      group: "Cloud / DevOps",
+      items: ["AWS", "Docker", "Terraform", "Git", "GitHub Actions"]
+    },
+    {
+      group: "Security / AI",
+      items: ["Keycloak", "OAuth2/JWT", "OpenAI .NET SDK", "Gemini"]
+    }
   ],
   certifications: [
     "Generative AI: Enhance your Data Analytics Career | IBM | Issued Jul 2025",
@@ -223,7 +209,7 @@
     }
   ],
   contact: {
-    note: "",
+    note: "Find my code on GitHub or connect with me on LinkedIn.",
     github: "https://github.com/evidentart",
     linkedin: "https://www.linkedin.com/in/ali-akcin/"
   }

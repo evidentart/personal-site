@@ -1,4 +1,4 @@
-﻿function setupMobileNav() {
+function setupMobileNav() {
   const menuButton = document.getElementById("menu-toggle");
   const nav = document.getElementById("site-nav");
 
@@ -6,14 +6,26 @@
     return;
   }
 
+  const closeMenu = () => {
+    nav.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "Open menu");
+  };
+
   menuButton.addEventListener("click", () => {
-    nav.classList.toggle("open");
+    const isOpen = nav.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
   });
 
   nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-    });
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
   });
 }
 
@@ -21,7 +33,10 @@ function setupRevealAnimation() {
   const revealItems = document.querySelectorAll(".reveal");
   document.body.classList.add("js-reveal");
 
-  if (!("IntersectionObserver" in window)) {
+  if (
+    !("IntersectionObserver" in window) ||
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  ) {
     revealItems.forEach((item) => item.classList.add("visible"));
     return;
   }
@@ -54,7 +69,6 @@ function setupPaperAccordion() {
     return;
   }
 
-  // Keep a single paper expanded to avoid long stacked PDF embeds.
   accordions.forEach((accordion) => {
     accordion.addEventListener("toggle", () => {
       if (!accordion.open) {
@@ -71,7 +85,6 @@ function setupPaperAccordion() {
 }
 
 function setupInteractions() {
-  // Centralized client-side behavior setup.
   setupMobileNav();
   setupRevealAnimation();
   setYear();
@@ -79,4 +92,3 @@ function setupInteractions() {
 }
 
 window.setupInteractions = setupInteractions;
-

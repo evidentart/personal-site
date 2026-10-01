@@ -1,91 +1,116 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ali Akcin | Software Developer Portfolio" />
-  <title>Ali Akcin | Portfolio</title>
+  <meta name="description" content="Software developer portfolio of Ali Akcin featuring backend, cloud, distributed systems, and AI-integrated software projects." />
+  <meta name="theme-color" content="#0d1b2a" />
+  <title>Ali Akcin | Software Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/base.css?v=3" />
-  <link rel="stylesheet" href="assets/css/layout.css?v=3" />
-  <link rel="stylesheet" href="assets/css/components.css?v=3" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css?v=4" />
+  <link rel="stylesheet" href="assets/css/layout.css?v=4" />
+  <link rel="stylesheet" href="assets/css/components.css?v=4" />
 </head>
 <body>
-  <div class="site-bg" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#home">Ali Akcin</a>
-      <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">Menu</button>
-      <nav id="site-nav" class="site-nav">
-        <a href="#about">About</a>
+      <a class="brand" href="#home" aria-label="Ali Akcin home">
+        <span class="brand-mark" aria-hidden="true">AA</span>
+        <span>Ali Akcin</span>
+      </a>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
         <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
-        <a href="#papers">Academic Papers</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="home">
-    <section class="hero section reveal">
+  <main id="main-content">
+    <section id="home" class="hero section reveal" aria-labelledby="hero-title">
       <div class="container hero-grid">
-        <div>
-          <p id="hero-kicker" class="kicker"></p>
+        <div class="hero-copy">
+          <p id="hero-kicker" class="eyebrow"></p>
           <h1 id="hero-title"></h1>
+          <p id="hero-focus" class="hero-focus"></p>
           <p id="hero-summary" class="hero-summary"></p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-outline" href="#contact">Get In Touch</a>
+            <a class="btn btn-primary" href="#projects">View selected work <span aria-hidden="true">↓</span></a>
+            <a class="btn btn-secondary" href="#contact">Get in touch</a>
+          </div>
+          <div class="hero-links" aria-label="Professional links">
+            <a id="hero-github-link" href="#" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a id="hero-linkedin-link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <aside class="card quick-facts">
-          <h2>Quick Facts</h2>
-          <ul id="quick-facts-list"></ul>
+        <aside class="hero-panel" aria-label="Technical focus">
+          <div class="panel-heading">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Technical focus</span>
+          </div>
+          <ul id="quick-facts-list" class="focus-list"></ul>
+          <div class="panel-footer">
+            <span class="mono-label">FEATURED WORK</span>
+            <strong>03 projects</strong>
+          </div>
         </aside>
       </div>
     </section>
 
-    <section id="about" class="section reveal">
+    <section id="projects" class="section section-projects reveal" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading section-heading-wide">
+          <div>
+            <p class="section-label">Selected work</p>
+            <h2 id="projects-title">Systems with a job to do.</h2>
+          </div>
+          <p class="section-intro">A focused set of backend, distributed, and cloud systems built around clear constraints and dependable behavior.</p>
+        </div>
+        <div id="project-grid" class="project-grid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal" aria-labelledby="about-title">
       <div class="container about-grid">
         <div class="profile-card">
-          <img src="assets/img/profile.png?v=3" alt="Ali Akcin headshot" />
+          <img src="assets/img/profile.png?v=4" alt="Ali Akcin" />
+          <p class="profile-caption">Software Developer<br /><span>Backend · Cloud · AI</span></p>
         </div>
-        <div>
-          <p class="section-label">Biography</p>
-          <h2>About Me</h2>
+        <div class="about-copy">
+          <p class="section-label">About</p>
+          <h2 id="about-title">A practical approach to software.</h2>
           <div id="bio-content" class="bio-content"></div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section reveal">
-      <div class="container">
-        <p class="section-label">Portfolio</p>
-        <h2>Selected Projects</h2>
-        <div id="project-grid" class="project-grid"></div>
-      </div>
-    </section>
-
-    <section id="education" class="section reveal">
-      <div class="container">
-        <p class="section-label">Background</p>
-        <h2>Education</h2>
-        <div id="education-list" class="education-list"></div>
-      </div>
-    </section>
-
-    <section id="skills" class="section reveal">
-      <div class="container skill-layout">
-        <div>
-          <p class="section-label">Strengths</p>
-          <h2>Technical Skills</h2>
-          <div id="skill-chips" class="chip-wrap"></div>
+    <section id="experience" class="section section-muted reveal" aria-labelledby="experience-title">
+      <div class="container narrow-container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Experience</p>
+            <h2 id="experience-title">Where I’ve applied it.</h2>
+          </div>
         </div>
-        <aside>
+        <div id="experience-list" class="experience-list"></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal" aria-labelledby="skills-title">
+      <div class="container skills-layout">
+        <div>
+          <p class="section-label">Toolkit</p>
+          <h2 id="skills-title">Technical skills</h2>
+          <div id="skill-groups" class="skill-groups"></div>
+        </div>
+        <aside class="credentials-panel">
           <p class="section-label">Credentials</p>
           <h2>Certifications</h2>
           <ul id="cert-list" class="cert-list"></ul>
@@ -93,39 +118,52 @@
       </div>
     </section>
 
-    <section id="papers" class="section reveal">
+    <section id="education" class="section section-muted reveal" aria-labelledby="education-title">
+      <div class="container narrow-container">
+        <p class="section-label">Education</p>
+        <h2 id="education-title">Academic foundation.</h2>
+        <div id="education-list" class="education-list"></div>
+      </div>
+    </section>
+
+    <section id="papers" class="section section-archive reveal" aria-labelledby="papers-title">
       <div class="container">
-        <p class="section-label">Research</p>
-        <h2>Academic Papers</h2>
+        <div class="section-heading section-heading-wide">
+          <div>
+            <p class="section-label">Archive</p>
+            <h2 id="papers-title">Academic work</h2>
+          </div>
+          <p class="section-intro">Selected writing and reflection from my technical communication coursework.</p>
+        </div>
         <div id="papers-list" class="papers-list"></div>
       </div>
     </section>
 
-    <section id="contact" class="section reveal">
+    <section id="contact" class="section reveal" aria-labelledby="contact-title">
       <div class="container contact-card">
         <div>
-          <p class="section-label">Connect</p>
-          <h2>Let's Build Something Useful</h2>
+          <p class="section-label">Contact</p>
+          <h2 id="contact-title">Let’s connect.</h2>
           <p id="contact-note"></p>
         </div>
         <div class="contact-links">
-          <a id="github-link" class="btn btn-primary" href="#" target="_blank" rel="noreferrer">GitHub</a>
-          <a id="linkedin-link" class="btn btn-outline" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a id="github-link" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a id="linkedin-link" class="btn btn-secondary" href="#" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>(c) <span id="current-year"></span> Ali Akcin. All rights reserved.</p>
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> Ali Akcin</p>
+      <a href="#home">Back to top ↑</a>
     </div>
   </footer>
 
-  <script defer src="assets/js/data/portfolio-data.js?v=3"></script>
-  <script defer src="assets/js/ui/section-renderers.js?v=3"></script>
-  <script defer src="assets/js/ui/interactions.js?v=3"></script>
-  <script defer src="assets/js/app/init.js?v=3"></script>
+  <script defer src="assets/js/data/portfolio-data.js?v=4"></script>
+  <script defer src="assets/js/ui/section-renderers.js?v=4"></script>
+  <script defer src="assets/js/ui/interactions.js?v=4"></script>
+  <script defer src="assets/js/app/init.js?v=4"></script>
 </body>
 </html>
-
