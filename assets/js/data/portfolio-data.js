@@ -18,30 +18,30 @@
   ],
   projects: [
     {
-      name: "Smart Budget Platform",
-      tools: "Java, Spring Boot, React, PostgreSQL, MongoDB, RabbitMQ, Keycloak",
+      name: "Aegis – AI Systems Investigation Platform",
+      tools: "C#, .NET 10, WinUI 3, SQLite, OpenAI .NET SDK, xUnit",
+      repository: "https://github.com/evidentart/Aegis",
+      highlights: [
+        "Built a Windows-native AI systems investigation platform using bounded planning, read-only Windows observation tools, evidence correlation, and grounded reporting for natural-language system troubleshooting.",
+        "Architected a safety-focused runtime with exact ToolId validation, shared observation budgets, bounded replanning, and SQLite-backed history and baselines; validated reliability with 203 automated tests and live OpenAI integration testing."
+      ]
+    },
+    {
+      name: "SmartExpenseAnalyzer",
+      tools: "Java, Spring Boot, React, PostgreSQL, MongoDB, Kafka, RabbitMQ, gRPC, Keycloak, Docker",
       repository: "https://github.com/evidentart/event-driven-budget-platform",
       highlights: [
-        "Built an event-driven personal finance platform with Spring Boot microservices; persisted expenses in PostgreSQL and published transaction events to Kafka for downstream budget processing.",
-        "Implemented Keycloak OAuth2/JWT auth and RabbitMQ async alerts; integrated Gemini API for personalized budget warnings and recommendations."
+        "Built an authenticated event-driven personal finance platform using Spring Boot microservices, React, PostgreSQL/MongoDB, Kafka, RabbitMQ, gRPC, and Keycloak for expenses, budgets, profiles, and AI-generated insights.",
+        "Implemented transactional outbox/inbox patterns, idempotent at-least-once processing, synchronous gRPC budget validation, and retry/DLQ recovery; integrated Gemini for asynchronous financial insights."
       ]
     },
     {
-      name: "Resume Portal",
-      tools: "Python, AWS Lambda, S3, CloudFront, DynamoDB, SES, GitHub Actions",
-      repository: "https://github.com/evidentart/job-application-portal",
+      name: "Serverless Image Processing Platform",
+      tools: "Python, React, AWS Lambda, S3, SQS, API Gateway, Terraform, GitHub Actions",
+      repository: "https://github.com/evidentart/serverless-image-processing",
       highlights: [
-        "Built a full-stack serverless AWS application for job applications with required PDF resumes, storing data securely in DynamoDB and private S3 buckets.",
-        "Implemented HR/Admin and applicant email workflows; hosted frontend on S3 + CloudFront and automated CI/CD deployments via GitHub Actions."
-      ]
-    },
-    {
-      name: "Employee Management Platform",
-      tools: "Java, Spring Boot, PostgreSQL, gRPC, Kafka, Docker, AWS",
-      repository: "https://github.com/evidentart/employee-management-system",
-      highlights: [
-        "Designed and implemented a microservices employee platform with authentication, API gateway, analytics, and CI/CD testing using Spring Boot, Docker, gRPC, Kafka, and AWS CloudFormation.",
-        "Provisioned cloud infrastructure with LocalStack + CloudFormation, including VPCs, ECS clusters, MSK, and RDS; enabled JWT-based auth and secure inter-service communication."
+        "Built an event-driven serverless image-processing platform with direct browser-to-S3 presigned uploads, SQS-backed asynchronous processing, image validation, and automated thumbnail, medium-size, and WebP generation.",
+        "Provisioned AWS infrastructure with Terraform using private S3 storage, least-privilege IAM, retry/DLQ handling, and deterministic UUID-based processing; added GitHub Actions CI covering 45 automated Python tests."
       ]
     },
     {
