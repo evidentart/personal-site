@@ -1,11 +1,25 @@
-﻿# Personal Website Structure
+# Personal Portfolio
 
-- `index.html`: Main page template
-- `assets/css/base.css`: Global variables, reset, typography
-- `assets/css/layout.css`: Grids and responsive layout
-- `assets/css/components.css`: Buttons, cards, chips, navigation components
-- `assets/js/data/portfolio-data.js`: Portfolio content model
-- `assets/js/ui/section-renderers.js`: UI rendering logic
-- `assets/js/ui/interactions.js`: Interaction behavior (mobile nav, reveal animations)
-- `assets/js/app/init.js`: App initialization/controller layer
-- `assets/img/profile.png`: Profile image
+Responsive personal portfolio built with HTML, CSS, and JavaScript.
+
+Live site: https://evidentart.github.io/personal-site/
+
+## Features
+
+- Responsive desktop and mobile layout
+- Data-driven project and experience sections
+- Reusable UI components
+- Mobile navigation
+- Scroll reveal interactions
+- Academic papers section
+- Accessibility and reduced-motion support
+
+## Structure
+
+```text
+assets/css/        Styles and responsive layout
+assets/js/data/    Portfolio content
+assets/js/ui/      Rendering and interactions
+assets/js/app/     Application initialization
+assets/img/        Images
+assets/papers/     Academic papers
